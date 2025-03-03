@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width-device-width, initial-scale-1.0">
+<title>Delta University</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b7d3a2258e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header-ds">
+        <nav>
+            <a href=""><img src="images\FB_IMG_1683393039224.jpg" alt=""></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa-solid fa-xmark" onclick="hidemenue()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about - copy.html">ABOUT</a></li>
+                    <li><a href="‏‏Courses - copy.html">COURSES</a></li>
+                    <li><a href="‏‏‏‏Blogs - copy.html">BLOGS</a></li>
+                    <li><a href="‏‏‏‏‏‏Contact us - copy.html">CONTACT us</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenue()"></i>
+        </nav>
+        <div class="text">
+            <h1></h1>
+
+        </div>
+    </section>
+   <section class="data2">
+    <div class="row">
+        <div class="data2-text">
+            <img src="images/لقطة شاشة 2023-12-10 141407.png" alt="">
+            <h2>Types of Data Structures:</h2>
+            <p>1. Arrays: A collection of elements, each identified by an index or a key.<br>
+               2. Linked Lists: Elements are stored in nodes, and each node points to the next one in the sequence.<br>
+               3. Stacks: Follows the Last In, First Out (LIFO) principle. The last element added is the first one to be removed.<br>
+               4. Queues: Follows the First In, First Out (FIFO) principle. The first element added is the first one to be removed.<br>
+               5. Trees: Hierarchical data structures with a root element and branching into subtrees.<br>
+               6. Graphs: A collection of nodes connected by edges, representing relationships between elements.<br>
+               7. Hash Tables: Data structure that maps keys to values, allowing for efficient retrieval.</p>
+            <br>
+            <h3>Importance of Data Structures:</h3>
+            <p>1. Efficiency: Choosing the right data structure can significantly impact the efficiency of algorithms and operations.<br>
+               2. Organization: Provides a way to organize and manage data logically.<br>
+               3. Search and Retrieval: Different data structures excel in various search and retrieval operations.<br>
+               4. Memory Management: Efficient use of memory is crucial, and data structures play a key role in this.<br>
+               5. Optimized Algorithms: Many algorithms depend on the use of specific data structures for optimal performance.</p>
+            <br>
+            <h3>What is data? </h3>
+            <p>A collection of facts from which conclusion may be drawn.<br>
+                e.g. Data: Temperature 35°C;  Conclusion: It is hot.
+            </p>
+            <br>
+            <h3>Data Structure Operations: </h3>
+            <p>1. Navigating : Accessing each data element exactly once so that certain items in the data may be processed.<br>
+               2. Searching : Finding the location of the data element (key) in the structure.<br>
+               3. Insertion : Adding a new data element to the structure.<br> 
+               4. Deletion : Removing a data element from the structure.<br>
+               5. Sorting : Arrange the data elements in a logical order (ascending/descending).<br>
+               6. Merging : Combining data elements from two or more data structures into one.
+            </p>
+            <br>
+            <h3>What is algorithm?</h3>
+            <p>A finite set of instructions which accomplish a particular task. <br>
+                A method or process to solve a problem.<br>
+                Transforms input of a problem to output.<br>
+                Algorithm = input + process + output
+            </p>
+            <br>
+            <h3>What is Pseudo-code? </h3>
+            <p> Pseudo-code is a short hand way of describing a computer program,<br>
+                Rather than using the specific syntax of a computer language, more general wording is used<br>
+                It is a mixture of NL and PL expressions, in a systematic way<br>
+                Using pseudo-code, it is easier for a non-programmer to understand the general workings of the program
+            </p>
+            <br>
+            <h3>Arrays</h3>
+            <p>It is a sequence of words placed in contiguous places in the RAM, even it is multidimentional<br>
+                An array starts at address x in RAM, for example.<br>
+                To access the array in position i, this means we access memory at position x+i.<br>
+                Array[i] = array[memory address of array + i]
+            </p>
+            <p>This means we can access each item at a constant time<br>
+                We will call it O(1)  (order of 1, means constant time)<br>
+                Accessing time to array[h] = Accessing time to array[w]<br>
+                This is called random accessing of array (as we know about the RAM)<br>
+                Then get item and set item time is O(1) in arrays.<br>
+                Building the array, however, is dependent on its size<br>
+                Then Build (x) time is O(n) in arrays.  
+            </p>
+            <p>Important functions on a data structure: </p>
+            <p> Build (x) => build the data structure.<br>
+                Get length => identify the no of items in DS.<br>
+                Get item  => access specific item in DS.<br>
+                Set item => change the value of specific item in DS.<br>
+                Iterate => navigate through the items in DS
+            </p>
+            <br>
+            <h3>Linked Lists</h3>
+            <p>Linked list Definition: A linked list is a sequence of items, with each item connected to the next by a link (a pointer).<br>
+                A linked list can grow and shrink as necessary while the program is running.<br>
+                An item and its link to the next item form a node.<br>
+            </p>
+            <p>Linked lists are a dynamic data structure, which can grow and
+                be pruned, allocating, and deallocating memory while the
+                program is running.
+            </p>
+            <p>Therefore, they are used to represent data with such
+                behaviour, examples:<br>
+                1- Dynamic data structures such as stacks and queues .<br>
+                2- Pperating systems use doubly linked lists to maintain
+                references to active processes, threads, and other dynamic
+                objects.
+            </p>
+            <p>Basic functionality:</p>
+            <p>Create a list<br>
+               Count - returns the number of elements. <br>
+               Add(T) - appends given element T at the end.<br>
+               AddFirst(T) - appends given element at the First.<br>
+               AddLast(T) (the same as ADD(T)).<br>
+               Remove(T) - removes a given element from the end.<br>
+            </p>
+            <p>Types of Linked List</p>
+            <img src="images/لقطة شاشة 2023-12-10 143916.png" alt="">
+            <br>
+            <h3>Queue DTS</h3>
+            <p>Queue Definition: Container of objects that are inserted and removed
+                according to the first-in first-out (FIFO) principle.<br>
+                A data structure in which elements are added to the rear
+                and removed from the front; a "first in, first out" (FIFO).<br>
+                Container which provides a method, enqueue, for
+                putting objects at the rear of the container, and a method,
+                dequeue, for taking objects out of the container at the
+                front.<br>
+            </p>
+            <p>Queue Methods:</p>
+            <p>1. enqueue(o) insert object o at the rear of the queue.<br>
+                Input: Object; Output: None<br>
+                2. dequeue() removes and return the object at the front of the queue; an error occurs if the:<br>
+                Input: None; Output: Object<br>
+                3. size( ) return the number of objects in the queue<br>
+                Input: None; Output: Integer<br>
+                4. isEmpty( ) return a Boolean indicating if the queue is empty<br>
+                Input: None; Output: Boolean<br>
+                5. front( ) returns the front object in the queue, without removing it; an error occurs if the queue is empty<br>
+                Input: None; Output: Object<br>
+            </p>
+            <br>
+            <h3>Stack DTS</h3>
+            <p>Stack Definition: Is a container which provides exactly one method, push, for putting
+                objects into the container, and one method, pop, for taking objects
+                out of the container.
+            </p>
+            <p>Is a container of objects that are inserted and removed according
+                to the last-in first-out (LIFO) principle.<br>
+                Objects which are stored in a stack are kept in a pile.<br>
+                The last item put into the stack is on the top.<br>
+                When an item is pushed into a stack, it is placed at the top of the
+                pile.<br>
+                When an item is popped, it is always the top item which is
+                removed.
+            </p>
+            <p>The main features of a stack: 
+                1. Access is allowed at one end (the top of the stack) only.<br>
+                   Data are added and removed at this end.<br>
+                2. The action of adding a data element to a stack is called pushing.<br>
+                3. The action of removing a data element from a stack is called popping.<br>
+                4. Stacks handle data in a last-in-first-out. or LIFO,<br>
+                   fashion: the last item pushed onto the stack is always the First item popped off the stack.
+            </p>
+            <p>Stack Operations:</p>
+            <p> Construction: Initializes an empty stack<br>
+                Push operation: Modifies a stack by adding a value to top of stack<br>
+                Pop operation: Modifies a stack by removing the top value of the stack<br>
+                Top operation: Retrieves the value at the top of the stack<br>
+                IsEmpty operation: Determines if stack contains any values To help with debugging, add early on:<br>
+                Size Op Retrieves the number of element of the stack<br>
+                Output: Displays all the elements stored in the stack.
+            </p>
+            <img src="images/لقطة شاشة 2023-12-10 145656.png" alt="">
+            <br>
+            <h3>Tree ADT</h3>
+            <p>Trees: A rooted tree data structure stores information in nodes.<br>
+                ◦Similar to linked lists:<br>
+                ◦There is a first node, or root<br>
+                ◦Each node has variable number of references to successors<br>
+                ◦Each node, other than the root, has exactly one node pointing to it<br>
+            </p>
+            <p>Tree Structure</p>
+            <img src="images/لقطة شاشة 2023-12-10 150333.png" alt="">
+            <br>
+            <h3>Hash table</h3>
+            <p>The hashing problem: The process of mapping an object or a number onto an integer in a given range is called hashing.<br>
+                • The ultimate goal is to map onto an integer range<br>
+                0, 1, 2, ..., M - 1<br>
+                • Problem: multiple objects may hash to the same value<br>
+                • Such an event is termed a collision<br>
+                • Hash tables use a hash function together with a<br>
+                mechanism for dealing with collisions
+            </p>
+            <br>
+            <h3>Graphs</h3>
+            <p>A graph is a data structure that consists of a finite set of nodes (vertices) and a collection of edges that connect pairs of nodes.
+                Graphs are used to represent relationships between different entities, making them a powerful and versatile data structure.
+            </p>
+            <p>Key Components:
+               1. Nodes (Vertices): Represent entities or points in the graph.<br>
+               2. Edges: Connect pairs of nodes and define relationships between them.<br>
+              
+               Types of Graphs:
+               1. Directed Graph (DiGraph): Edges have a direction, indicating a one-way relationship between nodes.<br>
+               2. Undirected Graph: Edges do not have a direction, representing a symmetric relationship between nodes.<br>
+               3. Weighted Graph: Assigns weights or costs to edges, indicating the strength or distance between nodes.<br>
+               4. Cyclic Graph: Contains at least one cycle (a loop that begins and ends at the same node).<br>
+               5. Acyclic Graph: Does not contain any cycles.<br>
+             
+             Representations:<br>
+               1. Adjacency Matrix: A 2D array where each cell (i, j) represents an edge between nodes i and j.<br>
+               2. Adjacency List: A collection of lists or arrays, where each list represents the neighbors of a particular node.<br>
+
+             Applications:<br>
+               1. Networks: Representing connections in social networks, transportation systems, etc.<br>
+               2. Routing Algorithms: Finding the shortest path between nodes.<br>
+               3. Dependency Resolution: Managing dependencies in software projects.<br>
+               4. Circuit Design: Modeling electrical circuits.<br>
+              
+               Graphs are fundamental in solving a wide range of problems and are extensively used in computer science, mathematics, and various real-world applications.
+            </p>
+            
+        
+            
+            
+        </div>
+
+    </div>
+   </section>
+   <section>
+    <div class="dat">
+        <div class="sheets">
+            <h1>Our Sheets</h1>
+            <p>We Have 6 sheets</p>
+            <br>
+            <Embed src="ds-sheets/Linked List Q Python.pdf" width="500px" height="500px"></Emped>
+            <Embed src="ds-sheets/Sheet 1-review.pdf" width="500px" height="500px"></Emped>
+            <Embed src="ds-sheets/Sheet 2-array DTS.pdf" width="500px" height="500px"></Emped>
+            <Embed src="ds-sheets/Sheet 3-linked list.pdf" width="500px" height="500px"></Emped>
+            <Embed src="ds-sheets/sheet 4- queue and stack.pdf" width="500px" height="500px"></Emped>
+            <Embed src="ds-sheets/sheet 6- mixed questions.pdf" width="500px" height="500px"></Emped>
+
+
+
+
+
+        </div>
+    </div>
+   </section>
+    <section class="footer">
+        <h4>Conclusion</h4>
+        <p>All of the above is some of the information contained in this article, but if you want to know more, join our college</p>
+        <div class="sociall">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-instegram"></i>
+            
+        </div>
+        <p>Made by Esraa Mahmoud <i class="fa fa-heart-o" style="color:red"></i> Thank You</p>
+    </section>
+    
+    <script>
+       var navlink= document.getElementById("navLink");
+       function hidemenu(){
+       navlink.style.right-"-200"
+       }
+       function showmenu(){
+        navlink.style.right = "0px"
+
+       }
+       
+    </script>
+</body>
+</html>

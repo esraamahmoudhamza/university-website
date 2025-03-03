@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width-device-width, initial-scale-1.0">
+<title>Delta University</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b7d3a2258e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header-arc">
+        <nav>
+            <a href=""><img src="images\FB_IMG_1683393039224.jpg" alt=""></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa-solid fa-xmark" onclick="hidemenue()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about - copy.html">ABOUT</a></li>
+                    <li><a href="‏‏Courses - copy.html">COURSES</a></li>
+                    <li><a href="‏‏‏‏Blogs - copy.html">BLOGS</a></li>
+                    <li><a href="‏‏‏‏‏‏Contact us - copy.html">CONTACT us</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenue()"></i>
+        </nav>
+        <div class="text">
+            <h1></h1>
+
+        </div>
+    </section>
+   <section class="data">
+    <div class="row">
+        <div class="data-text">
+            <img src="images/computer architecture.jpg" alt="">
+            <h2>What Is Computer Architecture?</h2>
+            <p>Computer architecture can be defined as a set of rules and methods that describe the functionality, management and implementation of 
+                computers. To be precise, it is nothing but rules by which a system performs and operates.</p>
+            <br>
+            <h3>Functional units of a computer</h3>
+            <p>Functions performed by a computer are:
+                Accepting information to be processed as input.
+                Storing a list of instructions to process the information.
+                Processing the information according to the list of instructions.
+                Providing the results of the processing as output.</p>
+            <br>
+            <h3>How are the functional units connected? </h3>
+            <p>Functional units may be connected by a group of parallel wires - called a bus.
+                Each wire in a bus can transfer one bit of information.
+                The number of parallel wires in a bus is equal to the word length of a computer</p>
+            <br>
+            <h3>What are the types of information in a computer?</h3>
+            <p>Information fed to/stored in a computer is either</p>
+            <p>1- Instructions</p>
+            <p>A sequence of instructions to perform a task is called a program, which is stored in the memory.</p>
+            <p>2- Data</p>
+            <p>Data are the “operands” upon which instructions operate.</p>
+            <br>
+            <h3>What is the memory unit?</h3>
+            <p>Memory unit stores instructions and data.
+                *Data is represented as a series of bits.
+                *To store data, memory unit means storing bits</p>
+            <p>Processor reads instructions and reads/writes data from/to the memory during the execution of a program. </p>
+            <p>Memory and processor have to “communicate” with each other in order to read/write information.</p>
+            <p>In theory, instructions and data could be fetched one bit at a time.
+                In practice, a group of bits is fetched at a time.</p>
+            <p>Group of bits stored or retrieved at a time is termed as “word”
+                Number of bits in a word is termed as the “word length” of a computer.</p>
+            <p>In order to read/write to and from memory, a processor should know where to look:
+                “Address” is associated with each word location.
+                Random Access Memory (RAM) provides fixed access time independent of the location of the word. 
+                Access time is known as “Memory Access Time”.</p>
+            <p>In order to reduce “communication time”, a small amount of RAM (known as Cache) is tightly coupled with the processor.
+                Modern computers have three to four levels of RAM units with different speeds and sizes:
+                Fastest, smallest known as Cache
+                Slowest, largest known as Main memory.</p>
+            <br>
+            <img src="images\69.png" alt="">
+            <h3>Secondary storage</h3>
+            <p>Store large amounts of data on secondary storage devices:
+                Magnetic disks and tapes, 
+                Optical disks (CD-ROMS).
+                Access to the data stored in secondary storage in slower, but take advantage of the fact that some information may be accessed  
+                infrequently.
+                Cost of a memory unit depends on its access time, lesser access time implies higher cost.</p>
+                <img src="images\941e1b20-6aec-4617-80ee-3edcfac7610e_900_900.png" alt="">
+            <br>
+            <h3>Arithmetic and logic unit (ALU)</h3>
+            <p>Operations are executed in the Arithmetic and Logic Unit (ALU).
+                Arithmetic operations such as addition, subtraction.
+                Logic operations such as comparison of numbers.</p>
+            <p>In order to execute an instruction, operands need to be brought into the ALU from the memory. 
+                Operands are stored in general purpose registers available in the ALU.
+                Access times of general purpose registers are faster than the cache.  
+                Results of the operations are stored back in the memory or retained in the processor for immediate use.</p>
+            <br>
+            <h3>Control unit</h3>
+            <p>Operations of Input unit, Memory, ALU and Output unit are coordinated by Control unit.
+                Instructions control “what” operations take place (e.g. data transfer, processing).
+                Control unit generates timing signals which determines “when” a particular operation takes place.</p>
+            <br>
+            <h3>Instruction Execution Cycle</h3>
+            <img src="images\Picture3.png" alt="">
+            <br>
+            <h3>RAM DRAM (Dynamic RAM) vs Cache  SRAM (Static RAM)</h3>
+            <p>Both RAM and Cache memories are used to store temporary data close to the processor for ease of information retrieval.</p>
+            <p>However, each of them is differently constructed which makes their price, size, speed method of data access different than each 
+                other.</p>
+            <img src="images\image.png" alt="">
+            <br>
+            <h3>Memory location and memory content (word)</h3>
+            <p>The memory is considered as a place to store information accessible using an address.
+                Memory Address is used to access the word
+                The word length is independent of the memory size
+                The memory size (M) = 2n where n is the length of the memory address</p>
+            <img src="images\222-10.png" alt="">
+            <br>
+            <br>
+            <h3>How Cache and RAM cooperate? </h3>
+            <p>Cache memory is intended to give memory speed approaching that of the processor and registers.
+                The cache contains a copy of portions of main memory. 
+                When the processor attempts to read a word of memory, a check is made to determine if the word is in the cache.</p>
+            <p>If it exist in the cache, the word is delivered to the processor. 
+                If not found in the cache, we have to bring it from the main memory. 
+                Instead of transferring one word at a time, a block of main memory, consisting of some fixed number of words, is read into cache 
+                and then the word is delivered to the processor.</p>
+            <br>
+            <h3>Why we transfer blocks from main memory to cache?</h3>
+            <p>When a block of data is fetched into the cache to satisfy a single memory reference, it is likely that there will be future 
+                reference to that same memory location or to other words in the block.</p>
+            <br>
+            <h3>Types of Cache organization </h3>
+            <p>1. Fully Associative </p>
+            <p>2. Direct Mapped</p>
+            <p>3. Set Associative</p>
+            <img src="images\maxresdefault.jpg" alt="">
+            <br>
+            <h3>Cache miss and cache hit</h3>
+            <p>These two words express finding a word in the cache (cache hit) and not finding the word in the cache (cache miss).
+                Cache hit implies direct access to the word
+                Cache miss implies we have to fetch the block containing the word from main memory to the cache then deliver it to the processor. 
+                This will take longer time (cache miss penalty)
+                Hit ratio = percentage of memory accesses satisfied by the cache.</p>
+            <h3>A cache hit ratio</h3>
+            <p>Miss ratio = 1- Hit ratio
+                A cache hit ratio is calculated by dividing the number of cache hits by the total number of cache hits and misses.
+                It measures how effective a cache is at fulfilling requests for content.
+                Larger blocks reduce cache misses through spatial locality</p>
+                <img src="images\Example-multi-level-cache-organisation.png" alt="">
+            <br>
+            <h3>Block Replacement Algorithms </h3>
+            <img src="images\Page-Replacement_4.png" alt="">
+            <br>
+            <h3>Cache to Memory Write Policy</h3>
+            <p>1.Write-through</p>
+            <p>2.Write-back</p>
+            <br>
+            <h3>Word addressing VS byte addressing</h3>
+            <p>Byte addressable memory is best suited for the processes that need a single byte data at a time. 
+                Word addressable memory is suitable for processes that requires data comprising single word at a time</p>
+            <br>
+            <h3>Buses inside the computer</h3>
+            <p>Its idea is based on that at any time, only one device is allowed to use the bus (register, ALU, memory, any connected component). 
+                Therefore, this common usage of a single device yields a communication bottleneck. 
+                The bus speed is determined according to its:
+                --- length and 
+                --- number of devices using it in common.</p>
+            <h3>Type of buses</h3>
+            <p>Data bus</p>
+            <p>Address Bus</p>
+            <p>Control Bus</p>
+            <h3>How buses are implemented?</h3>
+            <p>1- Using Multiplexers</p>
+            <p>2- Using Three state buffer</p>
+            <br>
+            <h3>Permanent Storage Devices</h3>
+            <p>Tape</p>
+            <p>Harddisk</p>
+            <p>CD</p>
+            <p>ROM</p>
+            <p>Flash</p>
+            
+            
+        </div>
+
+    </div>
+   </section>
+   <section>
+    <div class="dat">
+        <div class="sheets">
+            <h1>Our Sheets</h1>
+            <p>We Have 6 sheets</p>
+            <br>
+            <Embed src="sheets\Computer_Arc_Sheet_1[1].pdf" width="500px" height="500px"></Emped>
+            <Embed src="sheets/Sheet 2 .pdf.pdf" width="500px" height="500px"></Emped>
+            <Embed src="sheets/Sheet 3.pdf.pdf" width="500px" height="500px"></Emped>
+            <Embed src="sheets/Sheet 4.pdf.pdf" width="500px" height="500px"></Emped>
+            <Embed src="sheets/Sheet 5.pdf.pdf" width="500px" height="500px"></Emped>
+            <Embed src="sheets/Sheet 6.pdf.pdf" width="500px" height="500px"></Emped>
+
+
+
+
+
+        </div>
+    </div>
+   </section>
+    <section class="footer">
+        <h4>Conclusion</h4>
+        <p>All of the above is some of the information contained in this article, but if you want to know more, join our college</p>
+        <div class="sociall">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-instegram"></i>
+            
+        </div>
+        <p>Made by Esraa Mahmoud <i class="fa fa-heart-o" style="color:red"></i> Thank You</p>
+    </section>
+    
+    <script>
+       var navlink= document.getElementById("navLink");
+       function hidemenu(){
+       navlink.style.right-"-200"
+       }
+       function showmenu(){
+        navlink.style.right = "0px"
+
+       }
+       
+    </script>
+</body>
+</html>
